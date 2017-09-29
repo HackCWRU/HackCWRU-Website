@@ -1,0 +1,6 @@
+"babel": {
+  "presets": [
+    "env",
+    "react"
+  ]
+}
