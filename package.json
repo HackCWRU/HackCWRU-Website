@@ -1,0 +1,23 @@
+{
+  "name": "hackcwru",
+  "version": "0.0.0",
+  "description": "Case Western Reserve's hackathon website.",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/HackCWRU/HackCWRU-Website.git"
+  },
+  "keywords": [
+    "hackathon",
+    "case western"
+  ],
+  "author": {
+    "name": "Jack Mousseau",
+    "email": "mousseau@case.edu"
+  },
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/HackCWRU/HackCWRU-Website/issues"
+  },
+  "homepage": "https://github.com/HackCWRU/HackCWRU-Website#readme"
+}
