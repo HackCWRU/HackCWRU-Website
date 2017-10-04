@@ -21,3 +21,7 @@ app.get('/index.bundle.js', (req, res, next) => {
 app.listen(PORT, () => {
   console.log(`Listening on port ${PORT}.`);
 });
+
+app.get('/favicon.ico', (req, res, next) => {
+  res.sendFile(`${PUBLIC_DIR}/favicon.ico`);
+});
