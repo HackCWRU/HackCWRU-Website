@@ -1,5 +1,6 @@
 # Babel output directory
 lib/
+bundles/
 
 # Created by https://www.gitignore.io/api/node
 
