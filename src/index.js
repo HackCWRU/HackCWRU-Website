@@ -10,6 +10,7 @@ const BUNDLES_DIR = path.resolve(`${__dirname}/../bundles`);
 
 const app = express();
 
+
 app.get('/', (req, res, next) => {
   res.sendFile(`${PUBLIC_DIR}/index.html`);
 });
@@ -21,3 +22,5 @@ app.get('/index.bundle.js', (req, res, next) => {
 app.listen(PORT, () => {
   console.log(`Listening on port ${PORT}.`);
 });
+
+app.use(express.static(PUBLIC_DIR))
