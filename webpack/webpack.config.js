@@ -1,8 +1,20 @@
 var path = require('path');
 var webpack = require('webpack');
+const webpack = require('webpack');
+
+const PORT = process.env.PORT || 3000;
+const HOST = process.env.HOST || 'localhost';
+const NODE_ENV = process.env.NODE_ENV || 'production';
+const isProduction = (NODE_ENV === 'production');
+const isDevelopment = (NODE_ENV === 'development');
 
 module.exports = {
-  entry: './web/index.js',
+  entry: [
+    'react-hot-loader/patch',
+    `webpack-dev-server/client?http://${HOST}:${PORT}`,
+    'webpack/hot/only-dev-server',
+    './web/index.js'
+  ],
   context: path.join(__dirname, '../src'),
   output: {
     filename: 'index.bundle.js',
@@ -17,6 +29,7 @@ module.exports = {
   },
   module: {
     rules: [{
+      enforce: "pre",
       test: /\.js$/,
       exclude: /node_modules/,
       use: [{
