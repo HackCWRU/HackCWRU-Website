@@ -1,5 +1,4 @@
-var path = require('path');
-var webpack = require('webpack');
+const path = require('path');
 const webpack = require('webpack');
 
 const PORT = process.env.PORT || 3000;
@@ -33,6 +32,13 @@ module.exports = {
       test: /\.js$/,
       exclude: /node_modules/,
       use: [{
+        loader: 'eslint-loader'
+      }]
+    },
+    {
+      test: /\.js$/,
+      exclude: /node_modules/,
+      use: [{
         loader: 'babel-loader'
       }]
     }, {
@@ -45,12 +51,23 @@ module.exports = {
     fs: 'empty'
   },
   plugins: [
-    new webpack.EnvironmentPlugin(['NODE_ENV'])
+    new webpack.EnvironmentPlugin(['NODE_ENV']),
+    isDevelopment
+      ? new webpack.HotModuleReplacementPlugin() // enable HMR globally
+      : null,
+    isDevelopment
+      ? new webpack.NamedModulesPlugin() // prints more readable module names in the browser console on HMR updates
+      : null,
+    isDevelopment
+      ? new webpack.NoEmitOnErrorsPlugin() // do not emit compiled assets that include errors
+      : null
   ],
   devServer: {
-    host: 'localhost.dev',
+    host: 'localhost',
+    port: 3000,
     historyApiFallback: {
-      index: '/'
-    }
+      index: '/src/public/index.html'
+    },
+    stats: "minimal"
   }
 };

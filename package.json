@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "build": "babel src/ -d lib/ && NODE_ENV=development webpack --config webpack/webpack.config.js",
-    "start": "node lib/index.js"
+    "start": "NODE_ENV=development webpack-dev-server --config webpack/webpack.config.js"
   },
   "repository": {
     "type": "git",
@@ -42,9 +42,11 @@
     "eslint-loader": "^1.9.0",
     "eslint-plugin-react": "^7.4.0",
     "node-sass": "^4.5.3",
+    "react-hot-loader": "^3.0.0-beta.7",
     "sass-loader": "^6.0.6",
     "webpack": "^3.6.0",
-    "webpack-dev-server": "^2.9.1"
+    "webpack-dev-server": "^2.9.1",
+    "webpack-hot-middleware": "^2.19.1"
   },
   "dependencies": {
     "express": "^4.16.1",
