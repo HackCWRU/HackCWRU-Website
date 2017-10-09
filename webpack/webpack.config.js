@@ -68,6 +68,7 @@ module.exports = {
     historyApiFallback: {
       index: '/src/public/index.html'
     },
-    stats: "minimal"
+    stats: "minimal",
+    hot: true
   }
 };
