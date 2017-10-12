@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "build": "babel src/ -d lib/ && NODE_ENV=development webpack --config webpack/webpack.config.js",
-    "start": "node lib/index.js"
+    "start": "NODE_ENV=development webpack-dev-server --config webpack/webpack.config.js"
   },
   "repository": {
     "type": "git",
@@ -32,20 +32,28 @@
   },
   "devDependencies": {
     "babel-core": "^6.26.0",
+    "babel-eslint": "^7.2.3",
     "babel-loader": "^7.1.2",
     "babel-preset-env": "^1.6.0",
     "babel-preset-react": "^6.24.1",
     "css-loader": "^0.28.7",
+    "eslint": "^4.8.0",
+    "eslint-config-google": "^0.9.1",
+    "eslint-loader": "^1.9.0",
+    "eslint-plugin-react": "^7.4.0",
     "node-sass": "^4.5.3",
+    "react-hot-loader": "^3.0.0-beta.7",
     "sass-loader": "^6.0.6",
     "webpack": "^3.6.0",
-    "webpack-dev-server": "^2.9.1"
+    "webpack-dev-server": "^2.9.1",
+    "webpack-hot-middleware": "^2.19.1"
   },
   "dependencies": {
     "express": "^4.16.1",
     "react": "^16.0.0",
     "react-dom": "^16.0.0",
     "react-router": "^4.2.0",
-    "react-router-dom": "^4.2.2"
+    "react-router-dom": "^4.2.2",
+    "style-loader": "^0.19.0"
   }
 }
