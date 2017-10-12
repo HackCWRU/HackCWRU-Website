@@ -18,6 +18,16 @@ app.get('/index.bundle.js', (req, res, next) => {
   res.sendFile(`${BUNDLES_DIR}/index.bundle.js`);
 });
 
+app.get('/sponsorship', (req, res, next) => {
+  res.sendFile(`${PUBLIC_DIR}/assets/sponsorship.pdf`);
+});
+
 app.listen(PORT, () => {
   console.log(`Listening on port ${PORT}.`);
+});
+
+app.use(express.static(PUBLIC_DIR))
+
+app.get('/favicon.ico', (req, res, next) => {
+  res.sendFile(`${PUBLIC_DIR}/favicon.ico`);
 });
