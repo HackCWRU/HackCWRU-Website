@@ -1,19 +1,8 @@
-const path = require('path');
-const webpack = require('webpack');
-
-const PORT = process.env.PORT || 3000;
-const HOST = process.env.HOST || 'localhost';
-const NODE_ENV = process.env.NODE_ENV || 'production';
-const isProduction = (NODE_ENV === 'production');
-const isDevelopment = (NODE_ENV === 'development');
+var path = require('path');
+var webpack = require('webpack');
 
 module.exports = {
-  entry: [
-    'react-hot-loader/patch',
-    `webpack-dev-server/client?http://${HOST}:${PORT}`,
-    'webpack/hot/only-dev-server',
-    './web/index.js'
-  ],
+  entry: './web/index.js',
   context: path.join(__dirname, '../src'),
   output: {
     filename: 'index.bundle.js',
@@ -28,14 +17,6 @@ module.exports = {
   },
   module: {
     rules: [{
-      enforce: "pre",
-      test: /\.js$/,
-      exclude: /node_modules/,
-      use: [{
-        loader: 'eslint-loader'
-      }]
-    },
-    {
       test: /\.js$/,
       exclude: /node_modules/,
       use: [{
@@ -51,24 +32,12 @@ module.exports = {
     fs: 'empty'
   },
   plugins: [
-    new webpack.EnvironmentPlugin(['NODE_ENV']),
-    isDevelopment
-      ? new webpack.HotModuleReplacementPlugin() // enable HMR globally
-      : null,
-    isDevelopment
-      ? new webpack.NamedModulesPlugin() // prints more readable module names in the browser console on HMR updates
-      : null,
-    isDevelopment
-      ? new webpack.NoEmitOnErrorsPlugin() // do not emit compiled assets that include errors
-      : null
+    new webpack.EnvironmentPlugin(['NODE_ENV'])
   ],
   devServer: {
-    host: 'localhost',
-    port: 3000,
+    host: 'localhost.dev',
     historyApiFallback: {
-      index: '/src/public/index.html'
-    },
-    stats: "minimal",
-    hot: true
+      index: '/'
+    }
   }
 };
