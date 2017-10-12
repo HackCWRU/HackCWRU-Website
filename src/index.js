@@ -26,6 +26,8 @@ app.listen(PORT, () => {
   console.log(`Listening on port ${PORT}.`);
 });
 
+app.use(express.static(PUBLIC_DIR))
+
 app.get('/favicon.ico', (req, res, next) => {
   res.sendFile(`${PUBLIC_DIR}/favicon.ico`);
 });
