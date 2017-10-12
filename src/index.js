@@ -10,7 +10,6 @@ const BUNDLES_DIR = path.resolve(`${__dirname}/../bundles`);
 
 const app = express();
 
-
 app.get('/', (req, res, next) => {
   res.sendFile(`${PUBLIC_DIR}/index.html`);
 });
@@ -27,7 +26,6 @@ app.listen(PORT, () => {
   console.log(`Listening on port ${PORT}.`);
 });
 
-app.use(express.static(PUBLIC_DIR))
 app.get('/favicon.ico', (req, res, next) => {
   res.sendFile(`${PUBLIC_DIR}/favicon.ico`);
 });
