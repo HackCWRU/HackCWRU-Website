@@ -4,13 +4,8 @@
   "description": "Case Western Reserve's hackathon website.",
   "main": "index.js",
   "scripts": {
-<<<<<<< HEAD
     "build": "babel src/ -d lib/ && set NODE_ENV=development webpack --config webpack/webpack.config.js",
     "start": "node lib/index.js"
-=======
-    "build": "babel src/ -d lib/ && NODE_ENV=development webpack --config webpack/webpack.config.js",
-    "start": "NODE_ENV=development webpack-dev-server --config webpack/webpack.config.js"
->>>>>>> 242960f8961100d5cc47b17a7fa5a116cd56807f
   },
   "repository": {
     "type": "git",
