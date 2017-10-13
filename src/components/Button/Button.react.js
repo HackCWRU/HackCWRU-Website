@@ -5,9 +5,11 @@ export default class Button extends React.Component {
   render() {
     return (
       <div>
-      This is my button. 
+        <form action="http://hack.cwru.edu">
+          <input type="submit" value="Register!" />
+        </form>
       </div>
-    )
+    );
   }
 
 }
