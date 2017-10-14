@@ -1,5 +1,5 @@
 import express from 'express';
-import path from 'path';
+import path    from 'path';
 
 const PORT = process.env.PORT || 3000;
 
@@ -25,6 +25,8 @@ app.get('/sponsorship', (req, res, next) => {
 app.listen(PORT, () => {
   console.log(`Listening on port ${PORT}.`);
 });
+
+app.use(express.static(PUBLIC_DIR))
 
 app.get('/favicon.ico', (req, res, next) => {
   res.sendFile(`${PUBLIC_DIR}/favicon.ico`);

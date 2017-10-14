@@ -1,12 +1,24 @@
 import React from 'react';
-import style from './App.scss';
-
+import Summary from 'components/Summary/Summary.react';
+import Button from 'components/Button/Button.react';
+import Logo from 'components/Logo/Logo.react';
 export default class App extends React.Component {
+
   render() {
     return (
-      <div className={style.app}>
-        HackCWRU rocks!
+      <div>
+        <Logo />
+      	<Summary />
+        <div>
+          <Button
+           title="Register"
+           externalLink="https://dashboard.hackry.io/register?hackathonId=NQZBtoIMDJ"/>
+          <Button
+           title="Sponsor"
+           externalLink="/sponsorship" />
+        </div>
       </div>
     );
   }
+
 }
