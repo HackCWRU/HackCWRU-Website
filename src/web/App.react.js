@@ -9,7 +9,14 @@ export default class App extends React.Component {
       <div>
         <Logo />
       	<Summary />
-        <Button />
+        <div>
+          <Button
+           title="Register"
+           externalLink="https://dashboard.hackry.io/register?hackathonId=NQZBtoIMDJ"/>
+          <Button
+           title="Sponsor"
+           externalLink="/sponsorship" />
+        </div>
       </div>
     );
   }
