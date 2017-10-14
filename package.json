@@ -5,6 +5,7 @@
   "main": "index.js",
   "scripts": {
     "build": "babel src/ -d lib/ && NODE_ENV=development webpack --config webpack/webpack.config.js",
+    "build-win": "babel src/ -d lib/",
     "start": "node lib/index.js"
   },
   "repository": {
