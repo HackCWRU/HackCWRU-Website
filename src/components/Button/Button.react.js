@@ -1,5 +1,6 @@
 import PropTypes from 'prop-types';
 import React from 'react';
+import styles from 'components/Button/Button.scss';
 
 export default class Button extends React.Component {
 
@@ -17,7 +18,7 @@ export default class Button extends React.Component {
     const { externalLink } = this.props;
 
     return (
-      <div>
+      <div className={styles[this.props.color] || styles.button}>
         {externalLink ? <a target="_blank" href={externalLink}>
           {this.renderButton()}
         </a> : this.renderButton()}
@@ -29,5 +30,6 @@ export default class Button extends React.Component {
 
 Button.propTypes = {
   title: PropTypes.string,
-  externalLink: PropTypes.string
+  externalLink: PropTypes.string,
+  color: PropTypes.oneOf(['red', 'darkBlue'])
 };
