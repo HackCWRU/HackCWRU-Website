@@ -1,0 +1,38 @@
+@import "stylesheets/index.scss";
+@import "stylesheets/globals.scss";
+
+// Should be removed along with the corresponding div once v2 of the website is
+// complete. This just centers the container vertically.
+.landingPageContent {
+  display: flex;
+  align-items: center;
+  height: 100vh;
+
+  > div {
+    margin-bottom: 80px;
+  }
+}
+
+.container {
+  width: $containerWidth;
+  margin: 0 auto;
+}
+
+.logo {
+  img {
+    width: calc(#{$containerWidth} / 2 + 60px);
+    margin-left: -18px;
+  }
+}
+
+.summary {
+  margin-top: $spacingMargin;
+}
+
+.callToActions {
+  margin-top: $spacingMargin;
+
+  > div:nth-child(n + 2) {
+    margin-left: $spacingMargin;
+  }
+}
