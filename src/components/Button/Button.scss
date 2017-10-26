@@ -12,6 +12,13 @@
   }
 }
 
+@mixin buttonFilled($color) {
+  button {
+    background-color: $color;
+    color: #FFFFFF;
+  }
+}
+
 
 .button {
   background: #FFFFFF;
@@ -37,7 +44,7 @@
 
 .darkBlue {
   @extend .button;
-  @include button($darkBlue);
+  @include buttonFilled($darkBlue);
 }
 
 .red {
