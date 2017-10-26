@@ -15,7 +15,7 @@ export default class App extends React.Component {
             <Logo />
           </div>
           <div className={styles.summary}>
-            <Header>Feburary 16th - 18th</Header>
+            <Header>February 16th - 18th</Header>
             <Summary />
           </div>
           <div className={styles.callToActions}>
