@@ -1,0 +1,53 @@
+@import "stylesheets/globals.scss";
+
+@mixin button($color) {
+  button {
+    color: $color;
+    border-color: $color;
+
+    &:hover {
+      background-color: $color;
+      color: #FFFFFF;
+    }
+  }
+}
+
+@mixin buttonFilled($color) {
+  button {
+    background-color: $color;
+    color: #FFFFFF;
+  }
+}
+
+
+.button {
+  background: #FFFFFF;
+  height: inherit;
+  width: inherit;
+  display: inline-block;
+
+  button {
+    width: inherit;
+    background: inherit;
+    border-style: solid;
+    border-width: 2px;
+    border-color: #000000;
+    color: inherit;
+    cursor: pointer;
+    white-space: nowrap;
+    font-weight: 600;
+    font-size: 14px;
+    padding: 12px;
+    width: 120px;
+  }
+}
+
+.darkBlue {
+  @extend .button;
+  @include buttonFilled($darkBlue);
+}
+
+.red {
+  @extend .button;
+  @include button($red);
+}
