@@ -4,6 +4,7 @@ import Logo from 'components/Logo/Logo.react';
 import React from 'react';
 import styles from 'web/App.scss';
 import Summary from 'components/Summary/Summary.react';
+import Section from 'components/Section/Section.react.js'
 
 export default class App extends React.Component {
 
@@ -27,6 +28,15 @@ export default class App extends React.Component {
              title="Sponsor"
              externalLink="/sponsorship"
              color="red" />
+
+             <div>
+              <Section
+                title="Frequently Asked Questions"
+                id="FAQ"
+                content="What is a hackathon? etc"
+               />
+              <Section />
+             </div>
           </div>
         </div>
       </div>
