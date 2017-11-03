@@ -5,6 +5,7 @@ import React from 'react';
 import styles from 'web/App.scss';
 import Summary from 'components/Summary/Summary.react';
 import Event from 'components/Event/Event.react';
+import Tracks from 'components/Tracks/Tracks.react';
 
 export default class App extends React.Component {
 
@@ -31,7 +32,9 @@ export default class App extends React.Component {
           </div>
           <div className={styles.event}>
             <Event />
-            
+          </div>
+          <div className={styles.tracks}>
+            <Tracks />
           </div>
         </div>
       </div>
