@@ -29,14 +29,26 @@ export default class App extends React.Component {
              externalLink="/sponsorship"
              color="red" />
 
-             <div>
-              <Section
-                title="Frequently Asked Questions"
-                id="FAQ"
-                content="What is a hackathon? etc"
-               />
-              <Section />
-             </div>
+            <div>
+             <Section
+               title="Information"
+               id="info"
+               content="We are a hackathon"
+              />
+             <info/>
+             <Section
+               title="Frequently Asked Questions"
+               id="faq"
+               content="What is a hackathon? etc"
+              />
+             <faq/>
+             <Section
+               title="About The Event"
+               id="event"
+               content="a hackathon"
+             />
+            <Section />
+           </div>
           </div>
         </div>
       </div>

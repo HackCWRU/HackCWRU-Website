@@ -1,8 +1,8 @@
 @import "stylesheets/globals.scss";
 
 .section {
+  background-color: cyan;
   font-size: 18px;
   font-weight: 600;
-  font-family: ;
   margin-bottom: calc(#{$spacingMargin} / 2);
 }
