@@ -31,7 +31,12 @@ export default class App extends React.Component {
              color="red" />
           </div>
           <div className={styles.event}>
-            <Event />
+            <Event
+                name = {"HackCWRU V"}
+                when = {"February 16-18, 2018"}
+                where = {"Case Western Reserve University"}
+                about = {"HackCWRU brings together the brightest and most creative students to promote unrestricted technological innovation. Hosted at Case Western Reserve University, over 500 students will spend 36 hours bringing their imagination into the real world. Attendees will work with peers and mentors to create projects in one of six project tracks in the famous 7 story Sears Think[box] makerspace. Stay tuned for more on our track system! Don't be intimidated, however. You don't have to know what you are planning on doing to attend. If you are new to hackathons, we look forward to introducing you to a world of creation."}
+             />
           </div>
           <div className={styles.tracks}>
             <h1>Project Tracks</h1>
