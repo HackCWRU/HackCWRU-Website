@@ -6,14 +6,21 @@ img{
     height: 150px;
     width: 150px;
     margin-right: 20px;
-    display: inline-block;
+    display: table-cell;
+    float: left;
 }
 .title{
     margin-top: 15px;
     margin-bottom: 5px;
+    font-size: 20px;
 }
 .desc{
     float: right;
     text-align: justify;
-    display: inline-block;
+    line-height: 1.8;
+    width: 60%;
+    display: table-cell;
+}
+.trackRow{
+    display: table-row;
 }
