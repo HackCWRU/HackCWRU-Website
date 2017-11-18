@@ -8,3 +8,19 @@ $red: #ff6477;
 @mixin PrimaryFont {
   font-family: 'Libre Baskerville', serif;
 }
+
+@mixin Title {
+  font-size: 17px;
+  font-weight: 700;
+  margin-bottom: 4px;
+}
+
+@mixin Subtitle {
+  font-weight: 700;
+  margin-bottom: 4px;
+}
+
+@mixin Description {
+  line-height: 1.7;
+  padding-top: 4px;
+}
