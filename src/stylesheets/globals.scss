@@ -17,6 +17,7 @@ $red: #ff6477;
 @mixin Subtitle {
   font-weight: 700;
   padding-top: 4px;
+  margin-bottom: 4px;
 }
 
 @mixin Description {
