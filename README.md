@@ -1,3 +1,4 @@
+
 # hackCWRU V Website
 
 We're writing a website, and subsequently, two mobile apps, for the CWRU Annual student-run hackathon,
@@ -48,9 +49,10 @@ npm install babel-node -g
 
 ## Installation and Starting the server
 
-```
+```bash
 npm install
 npm run build
+npm run build-win # for windows machines
 npm start
 ```
 
@@ -90,7 +92,3 @@ At the next meeting let's get a list of githubs together so I can add everyone
 ## License
 
 This project is licensed under the MIT License - see the [LICENSE.md](https://github.com/HackCWRU/HackCWRU-Website/blob/master/LICENSE.txt) file for details
-
-
-
-

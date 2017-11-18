@@ -4,6 +4,7 @@ import Logo from 'components/Logo/Logo.react';
 import React from 'react';
 import styles from 'web/App.scss';
 import Summary from 'components/Summary/Summary.react';
+import Section from 'components/Section/Section.react.js'
 import Event from 'components/Event/Event.react';
 import Tracks from 'components/Tracks/Tracks.react';
 
@@ -29,6 +30,27 @@ export default class App extends React.Component {
              title="Sponsor"
              externalLink="/sponsorship"
              color="red" />
+
+            <div>
+             <Section
+               title="Information"
+               id="info"
+               content="We are a hackathon"
+              />
+             <info/>
+             <Section
+               title="Frequently Asked Questions"
+               id="faq"
+               content="What is a hackathon? etc"
+              />
+             <faq/>
+             <Section
+               title="About The Event"
+               id="event"
+               content="a hackathon"
+             />
+            <Section />
+           </div>
           </div>
           <div className={styles.event}>
             <Event
