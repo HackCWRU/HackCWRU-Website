@@ -1,20 +1,11 @@
+@import "stylesheets/globals.scss";
 
 .faq {
-  border: 3px gray;
-  width: 800px;
-  padding: 30px 0;
-
-  p {
-    line-height: 1.8;
-  }
-  tdl {
-    text-align: left;
-  }
-  tdr {
-    text-align: right;
-  }
-  tr {
-    padding: 2px;
+  .question {
+    @include Title;
   }
 
+  .answer {
+    @include Description;
+  }
 }
