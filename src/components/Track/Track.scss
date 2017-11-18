@@ -1,0 +1,25 @@
+@import "stylesheets/globals.scss";
+
+.track {
+  display: flex;
+
+  .image {
+    margin-top: 4px;
+    margin-right: 24px;
+
+    img {
+      width: 64px;
+      height: 64px;
+    }
+  }
+
+  .nameAndDescription {
+    .name {
+      @include Title;
+    }
+
+    .description {
+      @include Description;
+    }
+  }
+}
