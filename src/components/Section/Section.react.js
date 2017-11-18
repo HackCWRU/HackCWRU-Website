@@ -6,9 +6,9 @@ export default class Section extends React.Component {
   render() {
     return (
       <div className={styles.section} id={this.props.scrollId}>
-        <div className={styles.title}>
+        {this.props.title && <div className={styles.title}>
           {this.props.title}
-        </div>
+        </div>}
         <div className={styles.content}>
           {this.props.children}
         </div>
@@ -20,5 +20,5 @@ export default class Section extends React.Component {
 
 Section.propTypes = {
   scrollId: PropTypes.string,
-  title: PropTypes.string.isRequired
+  title: PropTypes.string
 };
