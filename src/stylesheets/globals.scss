@@ -12,12 +12,11 @@ $red: #ff6477;
 @mixin Title {
   font-size: 17px;
   font-weight: 700;
-  margin-bottom: 4px;
 }
 
 @mixin Subtitle {
   font-weight: 700;
-  margin-bottom: 4px;
+  padding-top: 4px;
 }
 
 @mixin Description {
