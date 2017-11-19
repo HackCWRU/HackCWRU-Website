@@ -7,7 +7,9 @@ export default class Track extends React.Component {
   render() {
     return (
     	<div className={styles.track}>
-
+        <div className={styles.image}>
+          <img src={this.props.image}/>
+        </div>
         <div className={styles.nameAndDescription}>
           <div className={styles.name}>
             {this.props.name}
@@ -24,6 +26,6 @@ export default class Track extends React.Component {
 
 Track.propTypes = {
   name: PropTypes.string.isRequired,
-  image: PropTypes.string,
+  image: PropTypes.string.isRequired,
   description: PropTypes.string.isRequired
 }
