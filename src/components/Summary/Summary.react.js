@@ -8,7 +8,7 @@ export default class Summary extends React.Component {
     	<div className={styles.summary}>
         <div className={styles.date}>{'February 16th - 18th, 2018'}</div>
         <div className={styles.description}>
-          HackCWRU brings together the brightest and most creative students to
+          hackCWRU brings together the brightest and most creative students to
           promote unrestricted technological innovation.
           <div className={styles.spacer}></div>
           Hosted at Case Western Reserve University, over 350 students will
@@ -19,7 +19,7 @@ export default class Summary extends React.Component {
           Don't be intimidated, however.  You don't have to know what you're
           doing to attend.  If you are new to hackathons, we look forward to
           introducing you to a world of creation.
-          Lastly, at HackCWRU we abide by and enforce <a href="http://static.mlh.io/docs/mlh-code-of-conduct.pdf">MLH's Code of Conduct</a>.
+          Lastly, at hackCWRU we abide by and enforce <a href="http://static.mlh.io/docs/mlh-code-of-conduct.pdf">MLH's Code of Conduct</a>.
         </div>
     	</div>
     )
