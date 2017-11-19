@@ -9,6 +9,10 @@
   }
 
   .content {
+    .description {
+      @include Description;
+    }
+
     > div:nth-child(n + 2) {
       margin-top: 24px;
     }

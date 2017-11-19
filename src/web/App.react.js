@@ -61,7 +61,10 @@ export default class App extends React.Component {
                color='red' />
             </div>
           </Section>
-          <Section title='Tracks' scrollId='tracks'>
+          <Section
+           title='Tracks'
+           scrollId='tracks'
+           description={'There\'s only one thing we like more than working on projects, and that\'s working on projects that work in the real world. That\'s why we\'ve created a unique track system for hackCWRU V.'}>
             {Object.keys(tracks).map((name, index) => {
               const track = tracks[name.toLowerCase()];
               return (
