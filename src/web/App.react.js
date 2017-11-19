@@ -1,15 +1,14 @@
 import Button from 'components/Button/Button.react';
-import Header from 'components/Header/Header.react';
+import Event from 'components/Event/Event.react';
+import FAQ from 'components/FAQ/FAQ.react';
+import Hackry from 'hackry';
 import Logo from 'components/Logo/Logo.react';
 import React from 'react';
 import styles from 'web/App.scss';
 import Summary from 'components/Summary/Summary.react';
 import Section from 'components/Section/Section.react.js'
-import Event from 'components/Event/Event.react';
 import Track from 'components/Track/Track.react';
 import tracks from 'data/tracks';
-import FAQ from 'components/FAQ/FAQ.react';
-import Hackry from 'hackry';
 
 export default class App extends React.Component {
 
@@ -44,12 +43,11 @@ export default class App extends React.Component {
           <Logo />
           <Section>
             <div className={styles.summary}>
-              <Header>February 16th - 18th</Header>
               <Summary />
             </div>
             <div className={styles.callToActions}>
               <Button
-               title='register'
+               title='Register'
                externalLink='https://dashboard.hackry.io/register?hackathonId=NQZBtoIMDJ'
                color='darkBlue' />
               <Button

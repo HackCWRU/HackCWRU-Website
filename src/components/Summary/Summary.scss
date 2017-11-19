@@ -1,5 +1,11 @@
+@import "stylesheets/globals.scss";
+
 .summary {
-  p {
-    line-height: 1.8;
+  .date {
+    @include Title;
+  }
+
+  .description {
+    @include Description;
   }
 }
