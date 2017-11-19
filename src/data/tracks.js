@@ -1,5 +1,4 @@
 module.exports = {
-  all: ['Civic', 'Healthcare', 'Fintech', 'Maker'],
   civic: {
     image: '/assets/track_civic.png',
     description: 'The Civic track looks at the all levels of connected devices, from local IoT networks to municipal systems and civic datasets. Create a new device for your smart home, or create something that benefits the community.'

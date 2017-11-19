@@ -34,12 +34,12 @@ export default class App extends React.Component {
             </div>
           </Section>
           <Section title='Tracks' scrollId='tracks'>
-            {tracks.all.map((name, index) => {
+            {Object.keys(tracks).map((name, index) => {
               const track = tracks[name.toLowerCase()];
               return (
                 <Track
                  key={index}
-                 name={name}
+                 name={name.charAt(0).toUpperCase() + name.slice(1)}
                  image={track.image}
                  description={track.description} />
               )
