@@ -6,23 +6,12 @@
 .landingPageContent {
   display: flex;
   align-items: center;
-  height: 100vh;
-
-  > div {
-    margin-bottom: 80px;
-  }
 }
 
 .container {
   width: $containerWidth;
   margin: 0 auto;
-}
-
-.logo {
-  img {
-    width: calc(#{$containerWidth} / 2 + 60px);
-    margin-left: -18px;
-  }
+  margin-top: 64px;
 }
 
 .summary {
