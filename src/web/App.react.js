@@ -3,6 +3,7 @@ import Event from 'components/Event/Event.react';
 import FAQ from 'components/FAQ/FAQ.react';
 import Hackry from 'hackry';
 import Logo from 'components/Logo/Logo.react';
+import Navbar from 'components/Navbar/Navbar.react';
 import React from 'react';
 import styles from 'web/App.scss';
 import Summary from 'components/Summary/Summary.react';
@@ -46,6 +47,20 @@ export default class App extends React.Component {
     return (
       <div className={styles.landingPageContent}>
         <div className={styles.container}>
+          <div className={styles.navbar}>
+            <Navbar
+             items={[{
+               name: 'Tracks',
+               scrollId: 'tracks'
+             }, {
+               name: 'FAQs',
+               scrollId: 'faqs'
+             }, {
+               name: 'Schedule',
+               scrollId: 'schedule'
+             }]} />
+          </div>
+          <div>
           <Logo />
           <Section>
             <div className={styles.summary}>
@@ -98,6 +113,7 @@ export default class App extends React.Component {
               )
             }) : this.renderComingSoon()}
           </Section>
+          </div>
         </div>
       </div>
     );
