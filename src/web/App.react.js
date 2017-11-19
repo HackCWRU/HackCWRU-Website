@@ -36,6 +36,12 @@ export default class App extends React.Component {
     });
   }
 
+  renderComingSoon() {
+    return (
+      <div className={styles.comingSoon}>Coming soon...</div>
+    )
+  }
+
   render() {
     return (
       <div className={styles.landingPageContent}>
@@ -47,8 +53,7 @@ export default class App extends React.Component {
             </div>
             <div className={styles.callToActions}>
               <Button
-               title='Register'
-               externalLink='https://dashboard.hackry.io/register?hackathonId=NQZBtoIMDJ'
+               title='Registration Coming Soon'
                color='darkBlue' />
               <Button
                title='Sponsor'
@@ -76,7 +81,7 @@ export default class App extends React.Component {
                  question={faq.question}
                  answer={faq.answer} />
               )
-            }) : <div>Coming soon</div>}
+            }) : this.renderComingSoon()}
           </Section>
           <Section title='Schedule' scrollId='schedule'>
             {this.state.events.length > 0 ? this.state.events.map((event, index) => {
@@ -88,7 +93,7 @@ export default class App extends React.Component {
                  where={event.location}
                  description={event.description} />
               )
-            }) : <div>Coming soon</div>}
+            }) : this.renderComingSoon()}
           </Section>
         </div>
       </div>
