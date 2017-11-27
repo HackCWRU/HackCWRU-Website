@@ -6,7 +6,8 @@
   "scripts": {
     "build": "babel src/ -d lib/ && NODE_ENV=production webpack --config webpack/webpack.config.js",
     "build:dev": "babel src/ -d lib/ && NODE_ENV=development webpack --config webpack/webpack.config.js",
-    "start": "node lib/index.js"
+    "start": "pm2 start ecosystem.config.js --env production",
+    "start:dev": "NODE_ENV=development node lib/index.js"
   },
   "repository": {
     "type": "git",
@@ -38,6 +39,7 @@
     "babel-preset-react": "^6.24.1",
     "css-loader": "^0.28.7",
     "node-sass": "^4.5.3",
+    "pm2": "^2.8.0",
     "sass-loader": "^6.0.6",
     "style-loader": "^0.19.0",
     "webpack": "^3.6.0",
