@@ -67,9 +67,6 @@ export default class App extends React.Component {
              }]} />
           </div>
           <div>
-          <Banner>
-            Register for <a href="https://hackday.mlh.io/localhackday-8d49">Local Hack Day</a>, happening December 2nd.
-          </Banner>
           <Logo />
           <Section>
             <div className={styles.summary}>
