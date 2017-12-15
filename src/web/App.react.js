@@ -1,6 +1,7 @@
 import Banner from 'components/Banner/Banner.react';
 import Button from 'components/Button/Button.react';
 import Event from 'components/Event/Event.react';
+import MLHBanner from 'components/MLHBanner/MLHBanner.react';
 import FAQ from 'components/FAQ/FAQ.react';
 import Hackry from 'hackry';
 import Logo from 'components/Logo/Logo.react';
@@ -46,8 +47,12 @@ export default class App extends React.Component {
 
   render() {
     return (
+      <div>
+      <MLHBanner/>
       <div className={styles.landingPageContent}>
+
         <div className={styles.container}>
+
           <div className={styles.navbar}>
             <Navbar
              items={[{
@@ -119,6 +124,7 @@ export default class App extends React.Component {
           </Section>
           </div>
         </div>
+      </div>
       </div>
     );
   }
