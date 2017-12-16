@@ -1,21 +1,11 @@
-FROM alpine
+FROM node:6
+EXPOSE 80
 
-MAINTAINER NGINX Docker Maintainers "docker-maint@nginx.com"
+WORKDIR /home/node/app
+COPY . /home/node/app/
 
-RUN apk add --update nginx && rm -rf /var/cache/apk/*
+RUN npm install
+RUN npm install -g pm2 babel-cli webpack
+RUN npm run build
 
-# forward request and error logs to docker log collector
-RUN ln -sf /dev/stdout /var/log/nginx/access.log
-RUN ln -sf /dev/stderr /var/log/nginx/error.log
-
-VOLUME ["/var/cache/nginx"]
-
-# add my configuration files
-ADD nginx.conf /etc/nginx/nginx.conf
-ADD domain.conf /etc/nginx/conf.d/domain.conf
-ADD www /var/www/
-
-EXPOSE 80 443
-
-CMD ["nginx", "-g", "daemon off;"]
-
+CMD PORT=80 NODE_ENV=production node lib/index.js
