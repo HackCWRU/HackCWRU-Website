@@ -69,7 +69,8 @@ export default class App extends React.Component {
             </div>
             <div className={styles.callToActions}>
               <Button
-               title='Registration Coming Soon'
+               title='Register'
+               externalLink='https://dashboard.hackry.io/register?hackathonId=NQZBtoIMDJ'
                color='darkBlue' />
               <Button
                title='Sponsor'
