@@ -1,0 +1,71 @@
+
+.trackSection {
+	display: flex;
+	flex-direction: column;
+	align-items: flex-end;
+}
+
+.Trackheader {
+	width: 85%;
+}
+
+.bodyTextTrack {
+	display: flex;
+	flex-direction: column;
+	width: 85%;
+}
+
+.title_image {
+	width: 100%;
+}
+
+.trackImageContainer {
+	width: 100px;
+	margin-right: 50px;
+	flex-grow: 10;
+	flex-shrink: 0;
+}
+
+.trackTextContainer {
+	flex-shrink: 10;
+}
+
+.trackText {
+	font-size: 15px;
+}
+
+.track {
+	display: flex;
+	flex-direction: row;
+	width: 80%;
+	margin-left: 50px;
+}
+
+.trackHeader {
+  font-size: 50px;
+  color: #24408e;
+  font-family: womby;
+}
+
+.fin {
+  color: #FFF079;
+}
+
+.civic {
+  color: #8EEDFF;
+}
+
+.health {
+  color: #FF7082;
+}
+
+.maker {
+  color: #12437B;
+}
+
+@media only screen and (max-width: 700px) {
+    .track {
+      flex-direction: column;
+			margin-left: 0;
+    }
+}

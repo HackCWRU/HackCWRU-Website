@@ -1,0 +1,114 @@
+.red {
+  width: 50%;
+  border-style: solid;
+  border-width: 2px;
+  cursor: pointer;
+  white-space: nowrap;
+  font-weight: 600;
+  font-size: 20px;
+  padding: 10px;
+  height: inherit;
+  color: red;
+  border-color: red;
+  background-color: transparent;
+  -webkit-transition: background-color .35s, -webkit-transform .35s;
+    transition:  background-color .35s, transform .35s;
+}
+
+.red > .links {
+  color:red;
+  text-decoration: none;
+  -webkit-transition: color .35s, -webkit-transform .35s
+}
+
+.red:hover > .links {
+  color: white;
+  text-decoration: none;
+}
+
+
+.darkBlue {
+  width: 50%;
+  border-style: solid;
+  border-width: 2px;
+  cursor: pointer;
+  white-space: nowrap;
+  font-weight: 600;
+  font-size: 20px;
+  padding: 10px;
+  height: inherit;
+  color: darkBlue;
+  border-color: darkBlue;
+  background-color: transparent;
+  -webkit-transition: background-color .35s, color .35s, -webkit-transform .35s;
+    transition:  background-color .35s, color .35s, transform .35s;
+}
+
+.darkBlue > .links {
+  color:darkBlue;
+  text-decoration: none;
+  -webkit-transition: color .35s, -webkit-transform .35s
+}
+
+.darkBlue:hover > .links {
+  color: white;
+  text-decoration: none;
+}
+
+.red:hover {
+  background-color: #FF7082;
+}
+
+.darkBlue:hover {
+  background-color: darkBlue;
+}
+
+@media only screen and (max-width: 700px) {
+    .red {
+      width: 50%;
+      border-style: solid;
+      border-width: 2px;
+      cursor: pointer;
+      white-space: nowrap;
+      font-weight: 600;
+      font-size: 20px;
+      padding: 10px;
+      height: inherit;
+      color: white;
+      border-color: red;
+      background-color: #FF7082;
+		}
+
+    .red:hover {
+      border-color: red;
+      background-color: #FF7082;
+    }
+
+    .red > .links {
+      color:white;
+    }
+
+    .darkBlue > .links {
+      color: white;
+    }
+
+    .darkBlue {
+      width: 50%;
+      border-style: solid;
+      border-width: 2px;
+      cursor: pointer;
+      white-space: nowrap;
+      font-weight: 600;
+      font-size: 20px;
+      padding: 10px;
+      height: inherit;
+      color: white;
+      border-color: darkBlue;
+      background-color: darkBlue;
+		}
+
+    .darkBlue:hover {
+      border-color: darkBlue;
+      background-color: darkBlue;
+    }
+}

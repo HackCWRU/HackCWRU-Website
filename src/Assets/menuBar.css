@@ -1,0 +1,27 @@
+.menuBar {
+  background-color: #91a9dc;
+}
+
+.navbar-brand {
+  color:#ffffff !important;
+}
+.navbar-nav>li>a {
+  color:#ffffff !important;
+}
+
+.menuBarText {
+  color:#ffffff;
+}
+
+.menuBarText:hover {
+  text-decoration: underline;
+  color:#ffffff;
+}
+
+@media only screen and (max-width: 700px) {
+
+  .dissapear {
+    display: none;
+  }
+
+}
