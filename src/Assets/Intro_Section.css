@@ -1,0 +1,41 @@
+.Intro_Section {
+	height:100vh;
+	display: flex;
+	align-content: center;
+	align-items: center;
+	justify-content: center;
+	text-align: center;
+}
+
+.center_row {
+	display: flex;
+	justify-content:center;
+	align-items:center;
+	align-content: center;
+	width:90%;
+}
+
+.logoContainer {
+	margin-right: 50px;
+}
+
+.logo {
+	height: 100%;
+}
+
+.university {
+	font-size: 30px;
+  color: #24408e;
+  font-family: womby;
+}
+
+@font-face {
+font-family: "womby";
+src: url("Womby-Regular.ttf");
+}
+
+@media only screen and (max-width: 700px) {
+    .logoContainer {
+			display: none;
+		}
+}

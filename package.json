@@ -1,0 +1,25 @@
+{
+  "name": "hackcwru_website",
+  "version": "1.0.0",
+  "description": "this is the website for hackCWRU",
+  "main": "index.js",
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test --env=jsdom",
+    "eject": "react-scripts eject"
+  },
+  "author": "Sapchan",
+  "license": "ISC",
+  "dependencies": {
+    "hackry": "^1.0.1",
+    "react": "^15.5.4",
+    "react-bootstrap": "^0.31.5",
+    "react-dom": "^15.5.4",
+    "react-responsive-carousel": "^3.1.30",
+    "react-router": "4.1.1",
+    "react-router-dom": "4.1.1",
+    "react-scripts": "^1.0.14",
+    "react-scrollable-anchor": "^0.5.0"
+  }
+}

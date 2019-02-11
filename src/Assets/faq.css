@@ -1,0 +1,75 @@
+.faq_header {
+  font-size: 50px;
+  color: #24408e;
+  font-family: womby;
+}
+
+.thing2 {
+  height:50vh;
+}
+
+.thing3 {
+  height: 60vh;
+}
+
+.firstImage {
+  width:15%;
+}
+
+.secondImage {
+  padding-top: 30vh;
+}
+
+.faq {
+  display: flex;
+  flex-direction: row;
+  padding-top: 100px;
+}
+
+.cont {
+  display: flex;
+  flex-direction: column;
+  width: 85%;
+}
+
+.content {
+  width: 90%;
+}
+
+.bounding_box {
+  border:2px solid #8EEEFF;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: row;
+}
+
+.header {
+  display: flex;
+}
+
+.comp1 {
+  padding-top: 10px;
+}
+
+.theplus_thingy {
+  font-size: 25px;
+  padding-left: 10px;
+  margin-right: 50px;
+  color: #FF6F82;
+  font-weight: bold;
+}
+
+.theplus_thingy:hover {
+  text-decoration:none;
+  color: #FF6F82;
+}
+
+@media only screen and (max-width: 900px) {
+    .thing2 {
+			display: none;
+		}
+
+    .thing3 {
+      display: none;
+    }
+}
